@@ -13,12 +13,12 @@ button.addEventListener('click', function(){
         const nameValue = data['name'];
         const tempValue = data['main']['temp'];
         const descValue = data['weather'][0]['description'];
-        const humValue = data['main']['humidity']
+        
 
         name.innerHTML = nameValue;
         temp.innerHTML = tempValue;
         desc.innerHTML = descValue;
-        hum.innerHTML = humValue;
+        
     })
     
 .catch(err => alert("Wrong City Name"))
